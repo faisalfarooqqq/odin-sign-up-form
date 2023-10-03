@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(167, 167, 228);
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.mainItem{
+    flex: 1;
+}
