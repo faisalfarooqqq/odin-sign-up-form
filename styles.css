@@ -1,12 +1,184 @@
-body{
-    background-color: rgb(167, 167, 228);
+@font-face {
+    font-family: Norse;
+    src: url(fonts/Norse-Bold.otf);
+}
+:root{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
-.main{
+*{
+    padding: 0;
+    margin: 0;  
+}
+
+body {
+    background-color: rgb(248, 248, 248);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    
     display: flex;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    font-size: 1rem;
+}
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: normal;
+    flex: 1;
+    height: auto;
+    flex: 70%;
+    flex-basis: 70%;
+   
+}
+
+.left{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/background-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    flex: 30%;
+    flex-basis: 30%;
+ 
+}
+.logo{
+    width: 5vw;
+    
+}
+
+ .graphics{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+   
+}
+
+
+
+h1{
+    color: white;
+    opacity: 0.7;
+    font-size: 4rem; 
+    font-family: Norse, sans-serif
+}
+.credits{
+    color: white;
+    flex: 1;
+    margin-top: 40vh;
+}
+
+
+.description{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    font-weight: bold;
+}
+.description p {
+    margin-bottom: 10px; 
+}
+
+label{
+    font-size: 1rem;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 4px;
+    
+}
+
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
+ 
+}
+.userInfo{
+    display: flex;
+    flex: 1;
     flex-direction: row;
 }
 
-.mainItem{
+button{
+    background-color: #596D48;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-left: 15px;
+    margin-top: 4px;
+   
+}
+
+.hype{
+    font-style: italic;
+    margin-top: 10px;
+}
+
+input{
+    
+    padding: 5px;
+    width: 20vw;
+    font-size: 1rem;
+    
+}
+input:focus {
+    border: 1px solid  #596D48;
+    border-radius: 1px;   
+  }
+input:focus::placeholder {
+    color: transparent;
+  }
+
+span{
+    font-style: italic;
+}
+
+
+
+button:hover{
+    background-color: white;
+    color: #596D48;
+}
+
+.login{
+    flex:1;
+    margin-left: 10px;
+} 
+
+.btn {
     flex: 1;
+    
+}
+a{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bolder;
 }
